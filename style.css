@@ -1,0 +1,136 @@
+@import url(https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;600;800;900&display=swap);
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+:root {
+    --main: #f81894;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    transition: ease 0.4s;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 50px auto;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    gap: 20px;
+}
+
+form {
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+}
+
+input {
+    border: none;
+    padding: 9px 10px;
+    width: 450px;
+    outline: 2px solid transparent;
+    background-color: rgba(232, 218, 218, 0.338);
+    border-radius: 6px;
+}
+
+input:focus {
+    outline: 2px solid var(--main);
+}
+
+button {
+    background-color: var(--main);
+    border: none;
+    color: #fff;
+    width: 200px;
+    padding: 5px;
+    text-align: center;
+    border-radius: 6px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #fff;
+    color: var(--main);
+    border: 1px solid var(--main);
+}
+
+h1 {
+    text-align: center;
+    margin: 30px 0;
+}
+
+table,
+td,
+tr {
+    padding: 5px;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-collapse: collapse;
+}
+
+
+table {
+    margin: 20px 0;
+}
+
+thead {
+    background-color: var(--main);
+    color: white;
+}
+
+th {
+    letter-spacing: 1px;
+    padding: 5px;
+
+}
+
+tr button {
+    width: 80px;
+    padding: 8px 10px;
+    background-color: #fff;
+    text-transform: uppercase;
+    color: #000;
+}
+
+tr button:hover {
+    color: var(--main);
+}
+
+th.btns {
+    width: 25%;
+}
+
+.action_btns {
+    display: flex;
+    align-items: center;
+    border: none;
+    justify-content: space-evenly;
+}
+
+form.update_form {
+    display: none;
+}
+
+form.active {
+    display: flex;
+
+}
+
+span#errorMsg {
+    color: red;
+}

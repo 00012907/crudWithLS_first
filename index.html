@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD with LS</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body onload="readData()">
+    <div class="container">
+        <h1>Registration</h1>
+        <form class="create_form">
+            <input type="text" placeholder="Name" id="name_create">
+            <input type="number" placeholder="Age" id="age_create">
+            <input type="text" placeholder="Email" id="email_create">
+            <button type="button" class="create_btn" onclick="addData()">CREATE</button>
+        </form>
+        <span id="errorMsg"></span>
+        <form class="update_form">
+            <input type="text" placeholder="Name" id="name_update">
+            <input type="number" placeholder="Age" id="age_update">
+            <input type="text" placeholder="Email" id="email_update">
+            <button type="button" class="update_btn" onclick="updateData()">UPDATE</button>
+        </form>
+        <span id="errorMsg" class="errorMsg_update"></span>
+        <table>
+            <thead>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Email</th>
+                <th class="btns">Actions</th>
+            </thead>
+            <tbody class="data_table"> 
+            </tbody>
+        </table>
+    </div>
+
+    <script src="./main.js"></script>
+    
+</body>
+</html>
